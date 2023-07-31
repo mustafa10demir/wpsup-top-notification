@@ -14,7 +14,9 @@ class HeaderViewController {
 	public function getNotification(): void {
 		$this->addActionWpEnqueueScripts();
 		$this->variables = ( new SettingsService )->firstOrDefault();
-		$this->addActionWpHead();
+		if ( $this->variables['wpsup_is_active_notification'] === 'checked' ) {
+			$this->addActionWpHead();
+		}
 	}
 
 	/**

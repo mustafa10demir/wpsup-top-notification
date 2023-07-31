@@ -11,8 +11,8 @@ class SettingsService {
 	public function __construct() {
 		$this->inputs = [
 			[
-				'name'    => 'wpsup_active',
-				'default' => false,
+				'name'    => 'wpsup_is_active_notification',
+				'default' => 'false',
 			],
 			[
 				'name'    => 'wpsup_notification',
