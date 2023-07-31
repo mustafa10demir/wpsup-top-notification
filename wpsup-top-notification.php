@@ -18,6 +18,8 @@
 
 namespace TopNotification;
 
+use TopNotification\Setup\Setup;
+
 defined( 'ABSPATH' ) || exit;
 
 define( 'WP_SUP_TOP_NOT_PLUGIN_DIR', untrailingslashit( dirname( __FILE__ ) ) );
@@ -55,3 +57,5 @@ spl_autoload_register(
 		}
 	}
 );
+
+( new Setup )->setup();
