@@ -3,6 +3,7 @@
 namespace TopNotification\Setup;
 
 use TopNotification\AdminMenu\AddAdminMenu;
+use TopNotification\TopView\Http\Controller\HeaderViewController;
 
 defined( 'ABSPATH' ) || exit;
 
@@ -15,6 +16,7 @@ class Setup {
 	public function setup(): void {
 		$this->loadLanguage();
 		$this->addMenu();
+		$this->viewNotification();
 	}
 
 	/**
@@ -33,4 +35,11 @@ class Setup {
 		( new AddAdminMenu )->addAdminMenu();
 	}
 
+	/**
+	 * @return void
+	 * Frontend Get Notification
+	 */
+	private function viewNotification(): void {
+		( new HeaderViewController() )->getNotification();
+	}
 }

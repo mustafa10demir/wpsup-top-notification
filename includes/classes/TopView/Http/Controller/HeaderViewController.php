@@ -54,6 +54,6 @@ class HeaderViewController {
 	 * View notification
 	 */
 	public function viewNotification( $variables ): void {
-		require( WP_SUP_TOP_NOT_PLUGIN_DIR . '/includes/classes/HeaderView/Views/NotificationView.php' );
+		require( WP_SUP_TOP_NOT_PLUGIN_DIR . '/includes/classes/TopView/Views/NotificationView.php' );
 	}
 }

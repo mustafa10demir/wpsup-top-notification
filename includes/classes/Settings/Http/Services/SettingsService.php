@@ -11,16 +11,16 @@ class SettingsService {
 	public function __construct() {
 		$this->inputs = [
 			[
-				'name'    => 'wpsup_is_active',
+				'name'    => 'wpsup_active',
 				'default' => false,
 			],
 			[
 				'name'    => 'wpsup_notification',
-				'default' => __( 'Notification Desktop', WP_SUP_PLUGIN_DOMAIN ),
+				'default' => __( 'Notification Desktop', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ),
 			],
 			[
 				'name'    => 'wpsup_notification_mobile',
-				'default' => __( 'Notification Mobile', WP_SUP_PLUGIN_DOMAIN ),
+				'default' => __( 'Notification Mobile', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ),
 			],
 			[
 				'name'    => 'wpsup_text_color',
@@ -28,7 +28,7 @@ class SettingsService {
 			],
 			[
 				'name'    => 'wpsup_button_text',
-				'default' => __( 'Read More', WP_SUP_PLUGIN_DOMAIN ),
+				'default' => __( 'Read More', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ),
 			],
 			[
 				'name'    => 'wpsup_button_link',

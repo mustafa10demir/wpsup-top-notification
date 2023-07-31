@@ -16,6 +16,10 @@
 	}
 	?>
 
+    <pre>
+        <?php print_r( $variables ); ?>
+    </pre>
+
     <form method="post">
         <table class="form-table">
             <tr>
@@ -24,9 +28,9 @@
                 </th>
                 <td>
                     <fieldset>
-                        <label for="wpsup_is_active">
-                            <input name="is_active" id="wpsup_is_active" type="checkbox"
-                                   value="checked" <?= $variables['wpsup_is_active'] ?? null; ?>>
+                        <label for="wpsup_active">
+                            <input name="wpsup_active" id="wpsup_active" type="checkbox"
+                                   value="checked" <?= $variables['wpsup_active'] ?? null; ?>>
 							<?= __( 'Is the notification active?', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ); ?>
                         </label>
                     </fieldset>
