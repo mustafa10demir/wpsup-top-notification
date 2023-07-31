@@ -2,6 +2,9 @@
 
 namespace TopNotification\AdminMenu;
 
+use TopNotification\Settings\Http\Controller\SettingsController;
+use TopNotification\Settings\Http\Services\SettingsService;
+
 defined( 'ABSPATH' ) || exit;
 
 class AddAdminMenu {
@@ -28,7 +31,9 @@ class AddAdminMenu {
 			'manage_options',
 			WP_SUP_TOP_NOT_PLUGIN_DOMAIN,
 			function () {
-				//TODO: Settings Controller
+				$service = new SettingsService();
+				$controller = new SettingsController( $service );
+				$controller->getSettingsPage();
 			}
 		);
 	}
