@@ -51,11 +51,11 @@ class SettingsService {
 				'default' => '#2d74b1',
 			],
 			[
-				'name'    => 'wpsup_bgl',
+				'name'    => 'wpsup_right_img_url',
 				'default' => null,
 			],
 			[
-				'name'    => 'wpsup_bgr',
+				'name'    => 'wpsup_left_img_url',
 				'default' => null,
 			],
 		];

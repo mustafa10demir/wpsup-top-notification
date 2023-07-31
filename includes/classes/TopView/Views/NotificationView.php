@@ -1,5 +1,5 @@
 <div id="top-warning"
-     style="background:url(<?= $variables['wpsup_bgl'] ?>) 100% no-repeat,url(<?= $variables['wpsup_bgr'] ?>) 0 no-repeat <?= $variables['wpsup_header_bg'] ?>;"
+     style="background:url(<?= $variables['wpsup_left_img_url'] ?>) 100% no-repeat,url(<?= $variables['wpsup_right_img_url'] ?>) 0 no-repeat <?= $variables['wpsup_header_bg'] ?>;"
      class="d-flex">
 
     <div class="message" style="margin-right: 1rem; color: <?= $variables['wpsup_text_color'] ?>">

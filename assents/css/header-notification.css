@@ -298,3 +298,23 @@
         display: none;
     }
 }
+
+
+#top-warning a {
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    background: #fff;
+    color: #333!important;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+#top-warning .btn {
+    user-select: none;
+    border: 1px solid transparent;
+    padding: 0.5rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    transition: color .2s ease-in-out,background-color .2s ease-in-out,border-color .2s ease-in-out,box-shadow .2s ease-in-out;
+    text-decoration: none;
+}

@@ -15,11 +15,7 @@
 		<?php
 	}
 	?>
-
-    <pre>
-        <?php print_r( $variables ); ?>
-    </pre>
-
+    
     <form method="post">
         <table class="form-table">
             <tr>
@@ -135,8 +131,8 @@
                     </label>
                 </th>
                 <td>
-                    <input name="wpsup_bgl" type="text" id="wpsup_bgl"
-                           value="<?= $variables['wpsup_bgl'] ?? null; ?>" class="regular-text">
+                    <input name="wpsup_left_img_url" type="text" id="wpsup_left_img_url"
+                           value="<?= $variables['wpsup_left_img_url'] ?? null; ?>" class="regular-text">
                 </td>
             </tr>
             <tr>
@@ -146,8 +142,8 @@
                     </label>
                 </th>
                 <td>
-                    <input name="wpsup_bgr" type="text" id="wpsup_bgr"
-                           value="<?= $variables['wpsup_bgr'] ?? null; ?>" class="regular-text">
+                    <input name="wpsup_right_img_url" type="text" id="wpsup_right_img_url"
+                           value="<?= $variables['wpsup_right_img_url'] ?? null; ?>" class="regular-text">
                 </td>
             </tr>
         </table>
