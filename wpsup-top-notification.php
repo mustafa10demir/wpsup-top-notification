@@ -16,7 +16,7 @@
  * @package wpsup-top-notification
  */
 
-namespace HeaderNotification;
+namespace TopNotification;
 
 defined( 'ABSPATH' ) || exit;
 
