@@ -18,6 +18,6 @@
     </a>
     <a href="<?= $variables['wpsup_button_link'] ?>">
         <img class="top_banner_mobile_icon" style="display: none;"
-             src="wp-content/plugins/<?= WP_SUP_TOP_NOT_PLUGIN_DOMAIN ?>/assents/img/arrow.png" alt="" width="20">
+             src="wp-content/plugins/<?= WP_SUP_TOP_NOT_PLUGIN_DOMAIN ?>/assets/img/arrow.png" alt="" width="20">
     </a>
 </div>

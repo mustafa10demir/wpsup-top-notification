@@ -45,7 +45,7 @@ class HeaderViewController {
 	 */
 	public function addCssFile(): void {
 		wp_enqueue_style( WP_SUP_TOP_NOT_PLUGIN_DOMAIN,
-			WP_SUP_TOP_NOT_PLUGIN_DIR_URL . '/assents/css/header-notification.css' );
+			WP_SUP_TOP_NOT_PLUGIN_DIR_URL . '/assets/css/header-notification.css' );
 	}
 
 
