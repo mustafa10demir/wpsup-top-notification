@@ -83,11 +83,8 @@ class SettingsService {
 	 * Update or Create option
 	 */
 	public function updateOrCrate( $name, $value ): void {
-		if ( get_option( $name ) !== null && get_option( $name ) != '' ) {
-			update_option( $name, $value );
-		} else {
-			add_option( $name, $value );
-		}
+		delete_option($name);
+        add_option($name, $value);
 	}
 
 	/**
@@ -96,14 +93,10 @@ class SettingsService {
 	 */
 	public function firstOrDefault(): array {
 		$variables = [];
+		$variables = [];
 		foreach ( $this->inputs as $input ) {
-			if ( get_option( $input['name'] ) !== null && get_option( $input['name'] ) != '' ) {
-				$variables[ $input['name'] ] = get_option( $input['name'] );
-			} else {
-				$variables[ $input['name'] ] = $input['default'];
-			}
+            $variables[ $input['name'] ] =  str_replace('\\', '', get_option($input['name'], $input['default']));
 		}
-
 		return $variables;
 	}
 
