@@ -93,6 +93,20 @@
             </tr>
             <tr>
                 <th scope="row">
+                    <?= __( 'Target Blank', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ) ?>
+                </th>
+                <td>
+                    <fieldset>
+                        <label for="wpsup_is_target_blank">
+                            <input name="wpsup_is_target_blank" id="wpsup_is_target_blank" type="checkbox"
+                                   value="_blank" <?php if($variables['wpsup_is_target_blank'] == '_blank') { echo 'checked'; } ?>>
+                            <?= __( 'Open link in new tab?', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ); ?>
+                        </label>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">
                     <label for="wpsup_button_bg">
 						<?= __( 'Button Background Color', WP_SUP_TOP_NOT_PLUGIN_DOMAIN ) ?>
                     </label>

@@ -10,14 +10,18 @@
             <?= $variables['wpsup_notification'] ?>
         </span>
     </div>
-
+    
     <a style="color:<?= $variables['wpsup_button_text_color'] ?>; background-color: <?= $variables['wpsup_button_bg'] ?>;"
        href=" <?= $variables['wpsup_button_link'] ?> "
-       class="btn btn-default button_description_banner">
-		<?= $variables['wpsup_button_text'] ?>
+       class="btn btn-default button_description_banner"
+       target="<?= $variables['wpsup_is_target_blank'] ?>"
+    >
+        <?= $variables['wpsup_button_text'] ?>
     </a>
-    <a href="<?= $variables['wpsup_button_link'] ?>">
+    <a href="<?= $variables['wpsup_button_link'] ?>"
+       target="<?= $variables['wpsup_is_target_blank'] ?>"
+    >
         <img class="top_banner_mobile_icon" style="display: none;"
-             src="wp-content/plugins/<?= WP_SUP_TOP_NOT_PLUGIN_DOMAIN ?>/assets/img/arrow.png" alt="" width="20">
+             src="wp-content/plugins/<?= WP_SUP_TOP_NOT_PLUGIN_DOMAIN ?>/assents/img/arrow.png" alt="" width="20">
     </a>
 </div>

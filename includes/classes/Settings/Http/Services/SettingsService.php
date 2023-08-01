@@ -35,6 +35,10 @@ class SettingsService {
 				'default' => '#',
 			],
 			[
+				'name'    => 'wpsup_is_target_blank',
+				'default' => null,
+			],
+			[
 				'name'    => 'wpsup_button_bg',
 				'default' => '#ffffff',
 			],
